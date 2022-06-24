@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">LáZ</string>
+    <string name="entrar">Entrar</string>
+    <string name="text_cadastro">Cadastre-se</string>
+    <string name="email">email</string>
+    <string name="senha">senha</string>
+    <string name="tittle_cadastro">Cadastre-se</string>
+    <string name="evento_teatro">Evento Teatro</string>
+    <string name="detalhes_do_evento_dadeyergyuerjsgerygserigswisgegfggggghydsegisydfisydifsfyfyifyisyfigfgyfffigyygrfygfisfygfsrygfihrfyghi">Detalhes do evento: dadeyergyuerjsgerygserigswisgegfggggghydsegisydfisydifsfyfyifyisyfigfgyfffigyygrfygfisfygfsrygfihrfyghi.</string>
+    <string name="detalhes_do_evento_dagggghydsegisydfisydifsfyfyifyisyfigfgyfffigyygrfygfisfygfsrygfihrfyghi" />
+    <string name="detalhes_do_evento" />
+    <string name="textview">TextView</string>
+    <string name="descricao_do_evento" />
+</resources>

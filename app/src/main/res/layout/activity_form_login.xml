@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLogin">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background"
+            tools:context=".teste">
+
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="185dp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/ContainerComponents"
+                style="@style/ContainerComponents"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/logo"/>
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/Edit_text"
+                android:drawableEnd="@drawable/ic_email"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="#101010"
+                app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+                app:layout_constraintStart_toStartOf="@+id/ContainerComponents"
+                app:layout_constraintTop_toTopOf="@id/ContainerComponents" />
+
+            <EditText
+                android:id="@+id/edit_senha"
+                style="@style/Edit_text"
+                android:drawableEnd="@drawable/ic_eye"
+                android:hint="@string/senha"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="#101010"
+                app:layout_constraintEnd_toEndOf="@id/ContainerComponents"
+                app:layout_constraintStart_toStartOf="@+id/ContainerComponents"
+                app:layout_constraintTop_toBottomOf="@id/edit_email" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_entrar"
+                style="@style/Button"
+                android:fontFamily="sans-serif"
+                android:text="@string/entrar"
+                android:textColor="#EF6C00"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_senha" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_tela_cadastro"
+                style="@style/Button"
+                android:layout_width="239dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="55dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/text_cadastro"
+                android:textColor="#EF6C00"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bt_entrar"
+                app:layout_constraintVertical_bias="0.764" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ContainerComponents"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
