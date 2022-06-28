@@ -1,11 +1,10 @@
-package com.example.aplicationfeed
+package com.example.teste4
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.teste4.R
 import com.google.android.material.imageview.ShapeableImageView
 
 class MyAdapter(private val listaeventos: ArrayList<Eventos>):

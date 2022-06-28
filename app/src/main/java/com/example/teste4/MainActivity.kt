@@ -1,14 +1,10 @@
-package com.example.teste4.MainActivity;
+package com.example.teste4
 
 import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.aplicationfeed.Eventos
-import com.example.aplicationfeed.MyAdapter
-import com.example.teste4.R
-import com.example.teste4.R.layout.activity_main
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val actionBar= supportActionBar
         actionBar!!.title= "Feed"
 
-        setContentView(activity_main)
+        setContentView(R.layout.activity_main)
 
 
         imageId= arrayOf(

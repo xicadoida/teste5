@@ -1,5 +1,3 @@
-package com.example.aplicationfeed
-
-import android.graphics.drawable.AnimatedImageDrawable
+package com.example.teste4
 
 data class Eventos(var titleImage: Int, var heading: String, var headingtwo: String, val headingthree: String)
